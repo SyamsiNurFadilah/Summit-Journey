@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #d7d9d3;
+    color: #333;
+}
+
+/* style header  */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo p {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #F7F9F2;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 2em;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    color: #F7F9F2;
+    font-weight: 500;
+}
+
+.nav-list ul li a:hover {
+    border-bottom: 1px solid #d7d9d3;
+    color: #d7d9d3;
+    padding-bottom: 3px;
+}
+
+.nav-list ul li a i {
+    font-size: 20px;
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    align-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* style header  */
+
+/* style halaman beranda  */
+.home {
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+section {
+    padding: 7% 12%;
+}
+
+.tagline-home h1 {
+    font-size: 2em;
+    color: #F7F9F2;
+}
+
+.tagline-home p {
+    font-size: 1.5em;
+    color: #d7d9d3;
+    font-weight: 500;
+}
+
+.tagline-home button {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tagline-home button:hover {
+    background-color: #d7d9d3;
+    transition: .1s;
+}
+
+/* style halaman beranda  */
+
+/* style halaman tentang  */
+.title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.background {
+    background-color: #333;
+    transition: 0.4s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+    gap: 2em;
+}
+
+.left-about p {
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.right-about img {
+    width: 25em;
+}
+
+aside {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F7F9F2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+aside ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+.whatsapp a {
+    padding-left: 2px;
+}
+
+.whatsapp a:hover {
+    color: #28D146;
+}
+
+.email a:hover {
+    color: rgb(203, 31, 31);
+}
+
+.linkedin a:hover {
+    color: #0A66C2;
+}
+
+/* style halaman tentang  */
+
+/* style halaman pemandu  */
+.card-tour-guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-content-tour-guide {
+    padding: 20px;
+    max-width: 300px;
+    background-color: #F7F9F2;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    line-height: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content-tour-guide img {
+    width: 200px;
+}
+
+.card-content-tour-guide .pemandu2 {
+    width: 160px;
+}
+
+.card-content-tour-guide .pemandu3 {
+    width: 190px;
+}
+
+.card-content-tour-guide button {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.card-content-tour-guide button:hover {
+    background-color: #d7d9d3;
+}
+
+/* style halaman pemandu  */
+
+/* style halaman destinasi  */
+.card-destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-content-destination {
+    padding: 0 0 10px 0;
+    max-width: 300px;
+    background-color: #F7F9F2;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+    line-height: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-content-destination img, h3, h4, p {
+    padding-bottom: 5px;
+}
+
+.card-content-destination img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content-destination img:hover {
+    filter: grayscale(1);
+}
+
+/* style halaman destinasi  */
+
+/* style halaman footer  */
+footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color: #F7F9F2;
+}
+
+.footer-text span {
+    font-weight: 700;
+}
+
+.nav-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.nav-list-footer ul {
+    display: flex;
+    gap: 2em;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-list-footer ul li a {
+    text-decoration: none;
+    color: #F7F9F2;
+}
+
+.nav-list-footer ul li a:hover {
+    border-bottom: 1px solid #d7d9d3;
+    color: #d7d9d3;
+    padding-bottom: 3px;
+}
+
+/* style halaman footer  */
+
+/* style responsive  */
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 999;
+        color: #F7F9F2;
+    }
+
+    .right-about img {
+        width: 20em;
+    }
+
+    .nav-list-footer ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    aside {
+        padding: 8px;
+    }
+
+    aside ul li {
+        margin: 8px 0;
+    }
+
+    aside ul li a {
+        font-size: 20px;
+    }
+
+    .card-content-tour-guide img {
+        width: 160px;
+    }
+
+    .card-content-tour-guide .pemandu2 {
+        width: 120px;
+    }
+
+    .card-content-tour-guide .pemandu3 {
+        width: 140px;
+    }
+
+    .nav-list {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #333;
+        z-index: 99;
+        transition: 0.4s;
+        transform: translateY(100%);
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .nav-list ul {
+        justify-content: space-around;
+    }
+
+    .nav-list ul li {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-list ul li a i {
+        font-size: 20px;
+        display: block;
+    }
+
+    .nav-list ul li a span {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .right-about img {
+        width: 18em;
+    }
+}
+
+/* style responsive  */
