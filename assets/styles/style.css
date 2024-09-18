@@ -181,15 +181,15 @@ article {
     padding-left: 2px;
 }
 
-.whatsapp a:hover {
+.whatsapp a i:hover {
     color: #28D146;
 }
 
-.email a:hover {
+.email a i:hover {
     color: rgb(203, 31, 31);
 }
 
-.linkedin a:hover {
+.linkedin a i:hover {
     color: #0A66C2;
 }
 
@@ -360,15 +360,15 @@ footer {
         gap: 1em;
     }
 
-    aside {
+    #kontak {
         padding: 8px;
     }
 
-    aside ul li {
+    #kontak ul li {
         margin: 8px 0;
     }
 
-    aside ul li a {
+    #kontak ul li a {
         font-size: 20px;
     }
 
