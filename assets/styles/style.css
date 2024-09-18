@@ -116,7 +116,7 @@ section {
 /* style halaman tentang  */
 .title {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .background {
@@ -124,21 +124,33 @@ section {
     transition: 0.4s ease-in-out;
 }
 
-.wrapper {
+.about {
     display: flex;
-    gap: 2em;
+    gap: 1rem;
 }
 
-.left-about p {
+#destination-favorit {
+    flex: 1;
+    background-color: #F7F9F2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#destination-favorit img {
+    width: 20em;
+}
+
+#destination-favorit p {
     text-align: justify;
-    text-indent: 3em;
 }
 
-.right-about img {
-    width: 25em;
+article {
+    text-align: justify;
+    flex: 5;
 }
 
-aside {
+#kontak {
     position: fixed;
     right: 10px;
     top: 50%;
@@ -150,16 +162,16 @@ aside {
     z-index: 9999;
 }
 
-aside ul {
+#kontak ul {
     list-style-type: none;
     align-items: center;
 }
 
-aside ul li {
+#kontak ul li {
     margin: 10px 0;
 }
 
-aside ul li a {
+#kontak ul li a {
     text-decoration: none;
     font-size: 24px;
     color: #333;
@@ -319,6 +331,19 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    #destination-favorit img {
+        width: 100%;
+    }
+
+    #destination-favorit, article {
+        width: 100%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 825px) {
@@ -327,10 +352,6 @@ footer {
         cursor: pointer;
         z-index: 999;
         color: #F7F9F2;
-    }
-
-    .right-about img {
-        width: 20em;
     }
 
     .nav-list-footer ul {
@@ -398,12 +419,6 @@ footer {
     .nav-list ul li a span {
         display: none;
 
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .right-about img {
-        width: 18em;
     }
 }
 
