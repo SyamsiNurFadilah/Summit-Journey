@@ -306,9 +306,10 @@ footer {
 
 .nav-list-footer ul {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     text-align: center;
     list-style-type: none;
+    padding-bottom: 5px;
 }
 
 .nav-list-footer ul li a {
@@ -319,7 +320,7 @@ footer {
 .nav-list-footer ul li a:hover {
     border-bottom: 1px solid #d7d9d3;
     color: #d7d9d3;
-    padding-bottom: 3px;
+    /* padding-bottom: 1px; */
 }
 
 /* style halaman footer  */
@@ -419,6 +420,10 @@ footer {
     .nav-list ul li a span {
         display: none;
 
+    }
+
+    .nav-list-footer ul {
+        gap: .7em;
     }
 }
 
